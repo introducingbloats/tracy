@@ -1,0 +1,13 @@
+name: Daily Version Check and Bump Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run every Sunday
+  workflow_dispatch: 
+
+jobs:
+  daily-nix-bump:
+    uses: introducingbloats/introducingbloats/.github/workflows/auto-update-flake.yml@main
+    permissions:
+      contents: write
+    secrets: inherit
