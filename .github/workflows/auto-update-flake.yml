@@ -2,7 +2,7 @@ name: Daily Version Check and Bump Update
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Run every Sunday
+    - cron: '0 0 * * *' # Every day. UTC0
   workflow_dispatch: 
 
 jobs:
