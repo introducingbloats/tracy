@@ -14,7 +14,7 @@
 
   # Build/runtime dependencies
   dbus,
-  libGL,
+  libglvnd,
   libffi,
   wayland,
   wayland-protocols,
@@ -22,6 +22,9 @@
   libxkbcommon,
   libdecor,
   xorg,
+  libgcc,
+  autoPatchelfHook,
+  makeWrapper,
 }:
 let
   currentVersion = lib.importJSON ./version.json;
@@ -65,6 +68,8 @@ stdenv.mkDerivation {
     cmake
     pkg-config
     wayland-scanner
+    autoPatchelfHook
+    makeWrapper
   ];
 
   buildInputs = [
@@ -75,7 +80,7 @@ stdenv.mkDerivation {
     pugixml
 
     # Graphics / windowing
-    libGL
+    libglvnd
     dbus
     wayland
     wayland-protocols
@@ -90,6 +95,9 @@ stdenv.mkDerivation {
     xorg.libXinerama
     xorg.libXcursor
     xorg.libXi
+
+    libgcc
+    libgcc.lib
   ];
 
   # Build all Tracy tools from their respective subdirectories
@@ -177,6 +185,23 @@ stdenv.mkDerivation {
 
     for f in build-import/tracy-import-*; do
       install -m755 "$f" $out/bin/
+    done
+
+    for bin in $out/bin/*; do
+      wrapProgram "$bin" \
+        --prefix LD_LIBRARY_PATH : ${lib.makeLibraryPath [
+          libglvnd
+          wayland
+          libxkbcommon
+          libdecor
+          dbus
+          xorg.libX11
+          xorg.libXext
+          xorg.libXrandr
+          xorg.libXinerama
+          xorg.libXcursor
+          xorg.libXi
+        ]}
     done
 
     runHook postInstall
