@@ -20,7 +20,7 @@ writeShellApplication {
     set -euo pipefail
     echo "Fetching latest revision from github.com/wolfpld/tracy"
 
-    NEW_REV=$(git ls-remote https://github.com/wolfpld/tracy.git master | awk '{print $1}')
+    NEW_REV=$(git ls-remote https://github.com/wolfpld/tracy.git refs/heads/master | awk '{print $1}')
     PREV_REV=$(jq -r '.rev' version.json)
     if [ "$NEW_REV" = "$PREV_REV" ]; then
       echo "Revision matches current version.json, skipping update"
