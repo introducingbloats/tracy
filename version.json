@@ -1,31 +1,37 @@
 {
   "version": "0.13.2",
-  "rev": "8420a1d7d626362f02d24b52e53513564e926577",
-  "gitHash": "sha256-w+5FE7SE/sRv3vcI7S52vq2BNM/l9S3P5KBWYXhsS3M=",
+  "rev": "d6620568e54ca5be24f489caf194140bccac1b13",
+  "gitHash": "sha256-Mr5Mfj0WwQS3HiWfuxn0Y9PK5An3RpjHnNcdCiSDN8A=",
   "deps": {
+    "capstone": {
+      "owner": "capstone-engine",
+      "repo": "capstone",
+      "rev": "6.0.0-Alpha7",
+      "hash": "sha256-cLEMlfZdzIa52imoDSrDKSnMH+bXauh2SwMvG4VWshE="
+    },
+    "zstd": {
+      "owner": "facebook",
+      "repo": "zstd",
+      "rev": "v1.5.7",
+      "hash": "sha256-tNFWIT9ydfozB8dWcmTMuZLCQmQudTFJIkSr0aG7S44="
+    },
     "imgui": {
       "owner": "ocornut",
       "repo": "imgui",
       "rev": "v1.92.6-docking",
       "hash": "sha256-aX75PGnxTCFHHbEINFF2CfQcRUqJ02OHVRTmfI8z0ng="
     },
-    "ppqsort": {
-      "owner": "GabTux",
-      "repo": "PPQSort",
-      "rev": "v1.0.6",
-      "hash": "sha256-HgM+p2QGd9C8A8l/VaEB+cLFDrY2HU6mmXyTNh7xd0A="
-    },
-    "tidy": {
-      "owner": "htacg",
-      "repo": "tidy-html5",
-      "rev": "5.8.0",
-      "hash": "sha256-vzVWQodwzi3GvC9IcSQniYBsbkJV20iZanF33A0Gpe0="
-    },
     "nfd": {
       "owner": "btzy",
       "repo": "nativefiledialog-extended",
       "rev": "v1.3.0",
       "hash": "sha256-JrwJP7zt/4oW4OQHCEM23k+zm6j1AVglGJowwkWc29k="
+    },
+    "ppqsort": {
+      "owner": "GabTux",
+      "repo": "PPQSort",
+      "rev": "v1.0.6",
+      "hash": "sha256-HgM+p2QGd9C8A8l/VaEB+cLFDrY2HU6mmXyTNh7xd0A="
     },
     "json": {
       "owner": "nlohmann",
@@ -45,23 +51,17 @@
       "rev": "v0.5.2",
       "hash": "sha256-dIaNfQ/znpAdg0/vhVNTfoaG7c8eFrdDTI0QDHcghXU="
     },
+    "tidy": {
+      "owner": "htacg",
+      "repo": "tidy-html5",
+      "rev": "5.8.0",
+      "hash": "sha256-vzVWQodwzi3GvC9IcSQniYBsbkJV20iZanF33A0Gpe0="
+    },
     "usearch": {
       "owner": "unum-cloud",
       "repo": "usearch",
       "rev": "v2.23.0",
       "hash": "sha256-r42JShUnYxvQ7Of1hKtC0TZnMV73xLXzUjV394XyqD4="
-    },
-    "capstone": {
-      "owner": "capstone-engine",
-      "repo": "capstone",
-      "rev": "6.0.0-Alpha7",
-      "hash": "sha256-cLEMlfZdzIa52imoDSrDKSnMH+bXauh2SwMvG4VWshE="
-    },
-    "zstd": {
-      "owner": "facebook",
-      "repo": "zstd",
-      "rev": "v1.5.7",
-      "hash": "sha256-tNFWIT9ydfozB8dWcmTMuZLCQmQudTFJIkSr0aG7S44="
     },
     "packageproject": {
       "owner": "TheLartians",
