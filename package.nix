@@ -5,6 +5,8 @@
   fetchFromGitHub,
   cmake,
   pkg-config,
+  copyDesktopItems,
+  makeDesktopItem,
 
   # System dependencies (used via pkg-config instead of CPM download)
   freetype,
@@ -70,6 +72,7 @@ stdenv.mkDerivation {
     wayland-scanner
     autoPatchelfHook
     makeWrapper
+    copyDesktopItems
   ];
 
   buildInputs = [
@@ -204,8 +207,25 @@ stdenv.mkDerivation {
         ]}
     done
 
+    # Install icon from source tree
+    if [ -f profiler/icon.png ]; then
+      install -Dm644 profiler/icon.png $out/share/icons/hicolor/256x256/apps/tracy.png
+    fi
+
     runHook postInstall
   '';
+
+  desktopItems = [
+    (makeDesktopItem {
+      name = "tracy";
+      desktopName = "Tracy Profiler";
+      exec = "tracy %U";
+      icon = "tracy";
+      comment = "A real time, nanosecond resolution profiler";
+      categories = [ "Development" "Debugger" "Profiling" ];
+      startupWMClass = "tracy";
+    })
+  ];
 
   meta = {
     description = "A real time, nanosecond resolution, remote telemetry, hybrid frame and sampling profiler";

@@ -1,8 +1,8 @@
-name: Daily Version Check and Bump Update
+name: Hourly Version Check and Bump Update
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Every day. UTC0
+    - cron: '0 * * * *' # Every hour. UTC
   workflow_dispatch: 
 
 jobs:
