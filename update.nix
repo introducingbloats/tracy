@@ -1,5 +1,6 @@
 {
   lib,
+  nurl,
   writeShellApplication,
   jq,
   coreutils,
@@ -11,6 +12,7 @@ writeShellApplication {
   name = "tracy-update";
   runtimeInputs = [
     jq
+    nurl
     coreutils
     git
     curl
@@ -32,8 +34,7 @@ writeShellApplication {
 
     # -- Prefetch Tracy source
     echo "Prefetching Tracy source..."
-    GIT_HASH=$(nix hash convert --to sri --hash-algo sha256 \
-      "$(nix-prefetch-url --unpack "https://github.com/wolfpld/tracy/archive/$NEW_REV.tar.gz" 2>/dev/null)")
+    GIT_HASH=$(nurl --fetcher fetchgit --hash "https://github.com/wolfpld/tracy.git" "$NEW_REV")
     echo "  hash: $GIT_HASH"
 
     # -- Parse Tracy version from TracyVersion.hpp
@@ -52,8 +53,7 @@ writeShellApplication {
 
     prefetch_github() {
       local owner="$1" repo="$2" rev="$3"
-      nix hash convert --to sri --hash-algo sha256 \
-        "$(nix-prefetch-url --unpack "https://github.com/$owner/$repo/archive/$rev.tar.gz" 2>/dev/null)"
+      nurl "https://github.com/$owner/$repo" "$rev" --hash
     }
 
     # Parse CPMAddPackage blocks: emit "name\towner\trepo\ttag" lines
