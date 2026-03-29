@@ -3,6 +3,7 @@
   stdenv,
   fetchgit,
   fetchFromGitHub,
+  git,
   cmake,
   pkg-config,
   copyDesktopItems,
@@ -67,6 +68,7 @@ stdenv.mkDerivation {
   };
 
   nativeBuildInputs = [
+    git
     cmake
     pkg-config
     wayland-scanner
