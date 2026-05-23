@@ -1,13 +1,13 @@
 {
   "version": "0.13.3",
-  "rev": "6eb9bf81ad6bb9ae8215b487b1143b8ae8cc540b",
-  "gitHash": "sha256-v01TLNgJY4lasZKdA2LdAqM/wikjhRSgrAIbIdEx4zo=",
+  "rev": "32b46a3b9056c79d85f4777ea4d3b7f8d14a25ae",
+  "gitHash": "sha256-lLVWOSyuHJ1+QaRMkDWdhdkidV45XDclCGG0Azstk/I=",
   "deps": {
     "capstone": {
       "owner": "capstone-engine",
       "repo": "capstone",
-      "rev": "6.0.0-Alpha7",
-      "hash": "sha256-cLEMlfZdzIa52imoDSrDKSnMH+bXauh2SwMvG4VWshE="
+      "rev": "6.0.0-Alpha8",
+      "hash": "sha256-4gBWmzUIOFJVLEYxYVtWbN3qZiQy7UFMUVTV4FVvHOQ="
     },
     "zstd": {
       "owner": "facebook",
@@ -42,8 +42,8 @@
     "md4c": {
       "owner": "mity",
       "repo": "md4c",
-      "rev": "release-0.5.2",
-      "hash": "sha256-2/wi7nJugR8X2J9FjXJF1UDnbsozGoO7iR295/KSJng="
+      "rev": "release-0.5.3",
+      "hash": "sha256-rsNJlNLsmTEiAARqQ5TovNWmHNikMiRi8eEyn8o43ao="
     },
     "base64": {
       "owner": "aklomp",
@@ -60,8 +60,8 @@
     "usearch": {
       "owner": "unum-cloud",
       "repo": "usearch",
-      "rev": "v2.23.0",
-      "hash": "sha256-r42JShUnYxvQ7Of1hKtC0TZnMV73xLXzUjV394XyqD4="
+      "rev": "v2.25.2",
+      "hash": "sha256-PMyp5FnJWlA8KsGCvqpC0tGucrWS+JmkwWSBUn02hIE="
     },
     "packageproject": {
       "owner": "TheLartians",
