@@ -1,7 +1,7 @@
 {
   "version": "0.13.3",
-  "rev": "f5526d01a233490b148e6a91544f5349daf833a8",
-  "gitHash": "sha256-61cU4ew//WRvVgs3E8aqiVo4Ad6TOUkl4a35aPpsBeI=",
+  "rev": "e80893ac20657cdc1e54bc67b2e1d4ce127c2274",
+  "gitHash": "sha256-TOwFRB269tDzeKWD7rPdcJga8etg4A6R2bp9dOK0tBg=",
   "deps": {
     "capstone": {
       "owner": "capstone-engine",
@@ -42,8 +42,8 @@
     "md4c": {
       "owner": "mity",
       "repo": "md4c",
-      "rev": "release-0.5.3",
-      "hash": "sha256-rsNJlNLsmTEiAARqQ5TovNWmHNikMiRi8eEyn8o43ao="
+      "rev": "755ce49acdc7cd682d4502b4796db5ed6a1230fb",
+      "hash": "sha256-6QwZLPyIMLT2oQD4Ry6tSBdo6L1j1JcX34ImiEPyjAE="
     },
     "base64": {
       "owner": "aklomp",
