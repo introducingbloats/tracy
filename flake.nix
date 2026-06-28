@@ -21,7 +21,7 @@
       );
     };
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11-small";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05-small";
     introducingbloats.url = "github:introducingbloats/core.flakes/main";
   };
 }
