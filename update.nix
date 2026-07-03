@@ -53,7 +53,7 @@ writeShellApplication {
 
     prefetch_github() {
       local owner="$1" repo="$2" rev="$3"
-      nurl "https://github.com/$owner/$repo" "$rev" --hash
+      nurl "https://github.com/$owner/$repo" "$rev" --submodules --hash
     }
 
     # Parse CPMAddPackage blocks: emit "name\towner\trepo\ttag" lines

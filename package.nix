@@ -37,6 +37,7 @@ let
   # Helper to fetch a CPM dependency listed in version.json
   fetchDep = name: fetchFromGitHub {
     inherit (currentVersion.deps.${name}) owner repo rev hash;
+    fetchSubmodules = true;
   };
 
   # CPM dependencies built from source
