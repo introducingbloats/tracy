@@ -1,7 +1,7 @@
 {
   "version": "0.13.5",
-  "rev": "b32d454bcd1d4efbe5ab1aaebd73083a02642316",
-  "gitHash": "sha256-utYasOU7ketEJdjrBFdzx3rC3rjK/7HL516GUA07GWk=",
+  "rev": "51f2b1da87767ddaebfb74fccfc3c4c83eec7027",
+  "gitHash": "sha256-kYR09rIVEdCtv2S+K855iV2IxdgMAG8GohHFIGmvnEY=",
   "deps": {
     "capstone": {
       "owner": "capstone-engine",
