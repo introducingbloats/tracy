@@ -1,7 +1,7 @@
 {
   "version": "0.13.5",
-  "rev": "7c30fedaaabf07b71a0fd4eea14eb73844892824",
-  "gitHash": "sha256-utMgle22q/ODQ6PRyULlK9QiY3wEPABlbBA7mGlhxX0=",
+  "rev": "8f52e0e5f5218cf4fe56510a4a85d0360a10930b",
+  "gitHash": "sha256-5Eclu/n8OtU1fEMhp2sNUEzwmecj3tD/BTfEyu0iOSI=",
   "deps": {
     "capstone": {
       "owner": "capstone-engine",
@@ -18,8 +18,8 @@
     "imgui": {
       "owner": "ocornut",
       "repo": "imgui",
-      "rev": "v1.92.8-docking",
-      "hash": "sha256-VzMpdkdnOoKyMG6EdtF4TMZGysDgdxlTV/6bNdBaac0="
+      "rev": "v1.92.9-docking",
+      "hash": "sha256-y+fNTHY3mZiX5R7NWjRznqLuyaLR3AWDV4L2SSHYFjY="
     },
     "nfd": {
       "owner": "btzy",
