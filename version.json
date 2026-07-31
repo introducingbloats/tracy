@@ -1,7 +1,7 @@
 {
   "version": "0.13.6",
-  "rev": "bf21d8ea115318e32ea0d97d2b4fbcb9f5773774",
-  "gitHash": "sha256-1qtRN2aPJ5jC8rTvkaDNWqv2SRV15Gmdt1ocjAF0tGc=",
+  "rev": "8985887128bdb9cb53ef88baa4490159213c181b",
+  "gitHash": "sha256-zvGUSqNeZ1H/f9YQk5AXfTt4gZq7T9LRJ/7VsHDKs08=",
   "deps": {
     "capstone": {
       "owner": "capstone-engine",
@@ -15,18 +15,6 @@
       "rev": "v1.5.7",
       "hash": "sha256-4ckF6NqeIgX4gOiI9f5xQO4YoYFxyPtl71VIpIFba48="
     },
-    "imgui": {
-      "owner": "ocornut",
-      "repo": "imgui",
-      "rev": "v1.92.9b-docking",
-      "hash": "sha256-2YWNWNeB75YhCMXjkoJdQBCPyu1HwhG8aPRo2cE6abk="
-    },
-    "nfd": {
-      "owner": "btzy",
-      "repo": "nativefiledialog-extended",
-      "rev": "3cd252a8f7ca32419b1ca235c2990ba6a0ecba7c",
-      "hash": "sha256-BV4FdH+AfNXAbLfipBPMGkJmggo59Kf4NIgKQ0hsB9g="
-    },
     "ppqsort": {
       "owner": "GabTux",
       "repo": "PPQSort",
@@ -38,6 +26,18 @@
       "repo": "json",
       "rev": "v3.12.0",
       "hash": "sha256-cECvDOLxgX7Q9R3IE86Hj9JJUxraDQvhoyPDF03B2CY="
+    },
+    "imgui": {
+      "owner": "ocornut",
+      "repo": "imgui",
+      "rev": "v1.92.9b-docking",
+      "hash": "sha256-2YWNWNeB75YhCMXjkoJdQBCPyu1HwhG8aPRo2cE6abk="
+    },
+    "nfd": {
+      "owner": "btzy",
+      "repo": "nativefiledialog-extended",
+      "rev": "3cd252a8f7ca32419b1ca235c2990ba6a0ecba7c",
+      "hash": "sha256-BV4FdH+AfNXAbLfipBPMGkJmggo59Kf4NIgKQ0hsB9g="
     },
     "md4c": {
       "owner": "mity",
