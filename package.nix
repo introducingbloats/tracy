@@ -44,10 +44,10 @@ let
   # Packages WITH patches (need writable copies for CPM to patch)
   imgui-src = fetchDep "imgui";
   ppqsort-src = fetchDep "ppqsort";
+  nfd-src = fetchDep "nfd";
   tidy-src = fetchDep "tidy";
 
   # Packages WITHOUT patches (read-only Nix store paths are fine)
-  nfd-src = fetchDep "nfd";
   json-src = fetchDep "json";
   md4c-src = fetchDep "md4c";
   base64-src = fetchDep "base64";
@@ -114,7 +114,7 @@ stdenv.mkDerivation {
       # Helper to create fresh writable copies of patched CPM sources.
       # Each tool build applies patches, so copies must be recreated per-tool.
       setupWritableSources = ''
-        rm -rf imgui-writable ppqsort-writable tidy-writable
+        rm -rf imgui-writable ppqsort-writable nfd-writable tidy-writable
 
         cp -r ${imgui-src} imgui-writable
         chmod -R u+w imgui-writable
@@ -124,6 +124,9 @@ stdenv.mkDerivation {
         # PPQSort bundles a CPM bootstrap that tries to download from GitHub.
         # Tracy's CPM.cmake is already loaded at this point, so just empty it.
         echo "" > ppqsort-writable/cmake/CPM.cmake
+
+        cp -r ${nfd-src} nfd-writable
+        chmod -R u+w nfd-writable
 
         cp -r ${tidy-src} tidy-writable
         chmod -R u+w tidy-writable
@@ -138,10 +141,10 @@ stdenv.mkDerivation {
         # CPM source overrides — packages WITH patches (writable copies)
         "-DCPM_ImGui_SOURCE=$PWD/imgui-writable"
         "-DCPM_PPQSort_SOURCE=$PWD/ppqsort-writable"
+        "-DCPM_nfd_SOURCE=$PWD/nfd-writable"
         "-DCPM_tidy_SOURCE=$PWD/tidy-writable"
 
         # CPM source overrides — packages WITHOUT patches (read-only store paths)
-        "-DCPM_nfd_SOURCE=${nfd-src}"
         "-DCPM_json_SOURCE=${json-src}"
         "-DCPM_md4c_SOURCE=${md4c-src}"
         "-DCPM_base64_SOURCE=${base64-src}"
