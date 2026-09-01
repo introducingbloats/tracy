@@ -5,6 +5,8 @@
   fetchFromGitHub,
   git,
   cmake,
+  python3,
+  pandoc,
   pkg-config,
   copyDesktopItems,
   makeDesktopItem,
@@ -68,9 +70,17 @@ stdenv.mkDerivation {
     hash = currentVersion.gitHash;
   };
 
+  postPatch = ''
+    # Use the packaged pandoc instead of downloading upstream's pinned binary.
+    substituteInPlace cmake/manual.cmake \
+      --replace-fail "set(PANDOC_VERSION 3.9.0.2)" "set(PANDOC_VERSION ${pandoc.version})"
+  '';
+
   nativeBuildInputs = [
     git
     cmake
+    python3
+    pandoc
     pkg-config
     wayland-scanner
     autoPatchelfHook
