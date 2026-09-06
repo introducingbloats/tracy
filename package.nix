@@ -73,7 +73,7 @@ stdenv.mkDerivation {
   postPatch = ''
     # Use the packaged pandoc instead of downloading upstream's pinned binary.
     substituteInPlace cmake/manual.cmake \
-      --replace-fail "set(PANDOC_VERSION 3.9.0.2)" "set(PANDOC_VERSION ${pandoc.version})"
+      --replace-fail "set(PANDOC_VERSION 3.11)" "set(PANDOC_VERSION ${pandoc.version})"
   '';
 
   nativeBuildInputs = [
