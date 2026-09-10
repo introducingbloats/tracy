@@ -1,7 +1,7 @@
 {
   "version": "0.14.1",
-  "rev": "f60889e1a7f823e8eb7c2287ed125231ec1972ef",
-  "gitHash": "sha256-ORRLP/Tg6NIdbd5Kh80vgkdgsN+WfYE9w6OENLFCJS8=",
+  "rev": "b892dd0b9630bc87f672c0e975c43cead62213ea",
+  "gitHash": "sha256-SegX89wfL7eBCt98tgq+zvCX0Cb1lPODDbR5mqYtCTY=",
   "deps": {
     "capstone": {
       "owner": "capstone-engine",
@@ -60,8 +60,8 @@
     "usearch": {
       "owner": "unum-cloud",
       "repo": "usearch",
-      "rev": "v2.26.0",
-      "hash": "sha256-CTqvc1Dqc0UQBWAWZQbsiArslzr7WVZVFHyOhIfM+LE="
+      "rev": "v2.26.2",
+      "hash": "sha256-SUMmClpct+dXUfMZF2cWWqCWioWwfduRUbNno/RNKrY="
     },
     "packageproject": {
       "owner": "TheLartians",
