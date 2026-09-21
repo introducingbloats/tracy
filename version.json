@@ -1,13 +1,13 @@
 {
   "version": "0.14.2",
-  "rev": "d92cc589d6680ba54efb42143c8cd1ab405efb16",
-  "gitHash": "sha256-y4YbxA/DdXdRUV4O9hZ5BWoTfdQfMIu06nzHqE+/REU=",
+  "rev": "81c5005509bf8f9d3cad90eb8155e24b8597a1dd",
+  "gitHash": "sha256-BVkjyssxzKjweFGXwuczQnbf4tbSaLKg3eQWi9VpONk=",
   "deps": {
     "capstone": {
       "owner": "capstone-engine",
       "repo": "capstone",
-      "rev": "6.0.0-Alpha10",
-      "hash": "sha256-b+QPfS/EhTulAZSvBNw5LTcnM2Wo/Fk8xXYxoeu6S80="
+      "rev": "6.0.0-Alpha11",
+      "hash": "sha256-ShiRgCDhzJB3/t/jeiWWa1IQgj254S7/8MGXjD+TUiM="
     },
     "zstd": {
       "owner": "facebook",
