@@ -1,7 +1,7 @@
 {
   "version": "0.14.2",
-  "rev": "0913edf7be17f2261ae85692f0ef0760ff2423e1",
-  "gitHash": "sha256-mCKFMMu1gvuYaCz+5Lo8xCQOHvmYLvTydTNU3S9TFfE=",
+  "rev": "a8db9bd8445343ee171439b9479c0a594183bf62",
+  "gitHash": "sha256-Ew1uw5dZcGQ+LzSVveL2O4iWHNTmnW9aZrSDpOElnX4=",
   "deps": {
     "capstone": {
       "owner": "capstone-engine",
@@ -36,8 +36,8 @@
     "nfd": {
       "owner": "btzy",
       "repo": "nativefiledialog-extended",
-      "rev": "7bbbd9fe6b1d1549b41df138f614d1a44df9ba08",
-      "hash": "sha256-kOosw/UY0B6O+DQUesDijtIn7rOWdRaVtiFU0DuPVqU="
+      "rev": "v1.4.0",
+      "hash": "sha256-B+HGKqerrD7CV6biLfS9YQnaUcATe50TtHHwUCfxMqI="
     },
     "md4c": {
       "owner": "mity",
